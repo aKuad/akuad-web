@@ -62,10 +62,6 @@ Feature fix `fix/*` Feature fix - something need modification
 
 ## Coding conventions
 
-> [!IMPORTANT]
->
-> For test code, there are some different conventions. See: [src/tests/README.md](src/tests/README.md)
-
 ### Source files location
 
 | Location          | Items                                 |
