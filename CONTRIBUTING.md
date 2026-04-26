@@ -25,6 +25,10 @@ Prohibited:
 
 ### Branch name format
 
+> [!NOTE]
+>
+> The branch name format check is implemented as `assets/pre-push`. To apply it, please run `git-hook-setup.sh` after clone at first.
+
 `<target>/<action>/<desc>`
 
 For `<desc>`, put words for describe the work. Multiple words join with `-`. (e.g. `feature/add/work-desc-here`)
@@ -73,6 +77,10 @@ Feature fix `fix/*` Feature fix - something need modification
 ## Messages syntax conventions
 
 ### Commit message
+
+> [!NOTE]
+>
+> The commit message format check is implemented as `assets/pre-push`. To apply it, please run `git-hook-setup.sh` after clone at first.
 
 | Syntax       | Description                   |
 | ------------ | ----------------------------- |
