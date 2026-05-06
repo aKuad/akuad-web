@@ -1,3 +1,5 @@
-export default async function scheduled() {
-  console.log("cron ran");
-}
+export default {
+  async scheduled() {
+    console.log("cron ran");
+  },
+};
