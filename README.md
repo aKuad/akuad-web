@@ -47,7 +47,6 @@ sequenceDiagram
   Note over b, w: Articles data update every hour
   w ->> w: Fetch article info<br>from external services
   w ->> k: Put data
-  destroy w
 ```
 
 ## License
