@@ -1,0 +1,7 @@
+name = "akuad-web"
+pages_build_output_dir = "global/"
+compatibility_date = "2026-05-03"
+
+[[env.production.kv_namespaces]]
+binding = "ARTICLES_KV"
+id = "ccb43081d49740b2b3ac7a526125468a"
