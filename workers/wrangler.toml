@@ -2,6 +2,13 @@ name = "akuad-web-cron"
 main = "cron.ts"
 compatibility_date = "2026-05-03"
 
+[observability.logs]
+enabled = true
+invocation_logs = true
+
+[observability.traces]
+enabled = true
+
 [triggers]
 crons = [ "0 * * * *" ]
 
