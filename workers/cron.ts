@@ -5,8 +5,8 @@
  */
 
 export default {
-  scheduled(_controller: ScheduledController, env: Env, _ctx: ExecutionContext) {
-    env.ARTICLES_KV?.put("articles", new Date().toISOString()); // Date string as sample data now
+  async scheduled(_controller: ScheduledController, env: Env, _ctx: ExecutionContext) {
+    await env.ARTICLES_KV.put("articles", new Date().toISOString());  // Date string as sample data now
     console.log("cron ran");
   },
 };
