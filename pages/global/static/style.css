@@ -7,6 +7,7 @@
 
 :root {
   --text-color: hsl(0, 0%, 90%);
+  --accent-color: hsl(240, 50%, 50%);
 }
 
 html {
@@ -66,7 +67,7 @@ header {
   background-color: hsl(240, 0%, 30%);
 }
 .header-nav-item-active {
-  background-color: hsl(240, 50%, 50%);
+  background-color: var(--accent-color);
 }
 
 
@@ -75,11 +76,12 @@ main {
   margin: 2rem auto;
   padding: 1rem 1.618rem;
   max-width: 667px;
+  width: 100%;
 }
 
 h1 {
   font-size: 1.618rem;
-  border-left: 15px solid hsl(240, 50%, 50%);
+  border-left: 15px solid var(--accent-color);
   padding: 0.3em calc(0.3em * 1.618);
   margin: 1em 0;
 }
@@ -87,6 +89,14 @@ h1 {
 p {
   line-height: 1.5em;
   margin: 1em 0;
+}
+
+a {
+  color: hsl(240, 100%, 80%);
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
 }
 
 hr {
