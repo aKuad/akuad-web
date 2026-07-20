@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="aKuad">
+    <meta name="creator" content="aKuad">
+    <meta name="description" content="Projects by aKuad">
+    <meta name="keywords" content="akuad,website,projects,articles">
+    <meta property="og:title" content="Projects - aKuad">
+    <meta property="og:description" content="Projects by aKuad">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://akuad.dev/">
+    <meta property="og:image" content="https://akuad.dev/static/og-image.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="./static/style.css">
+    <style>
+      h3 {
+        margin: 2rem 0 1rem 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+      .project-container {
+        width: 100%;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .project-thumb {
+        flex: 1 1 0;
+      }
+      .project-thumb > img {
+        width: 100%;
+        border: 1px solid var(--border-color);
+      }
+      .project-badges {
+        text-align: right;
+      }
+      .project-desc {
+        flex: 1.618 1 0;
+        margin-left: 1.5rem;
+      }
+      @media screen and (width < 450px) {
+        .project-container {
+          flex-direction: column;
+        }
+        .project-desc {
+          margin-left: 0;
+        }
+      }
+    </style>
+    <title>Projects - aKuad</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="header-container">
+        <div id="header-icon"><a href="/"><img src="./static/icon-small.webp" style="width: 100%;"></a></div>
+        <nav id="header-nav">
+          <a href="/" class="header-nav-item">Top</a>
+          <div class="header-nav-item header-nav-item-active">Projects</div>
+          <!-- <a href="./articles.html" class="header-nav-item">Articles</a> -->
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>Projects</h1>
+
+      <h2>Active</h2>
+      <p>My current projects. Actively in development.</p>
+      <article>
+        <h3>aKuad Web</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/akuad-web.webp" alt="aKuad Web Thumbnail"></div>
+          <div class="project-desc">
+            <p>This website. Built with Vanilla HTML, CSS and JS. Powered by Cloudflare Workers & Pages.</p>
+            <p class="project-badges">
+              <a href="https://github.com/aKuad/akuad-web" target="_blank"><img src="https://img.shields.io/badge/aKuad-akuad--web-181717?logo=github" alt="aKuad Web on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <hr>
+      <article>
+        <h3>antenna</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/antenna-logo.svg" alt="antenna Thumbnail"></div>
+          <div class="project-desc">
+            <p>Posts update collector library. Used at this site's articles page.</p>
+            <p class="project-badges">
+              <a href="https://jsr.io/@akuad/antenna" target="_blank"><img src="https://jsr.io/badges/@akuad/antenna" alt="JSR @akuad/antenna version badge"></a>
+              <a href="https://github.com/aKuad/antenna" target="_blank"><img src="https://img.shields.io/badge/aKuad-antenna-181717?logo=github" alt="antenna on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <hr>
+      <article>
+        <h3>Web DMX</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/web-dmx.webp" alt="Web DMX Thumbnail"></div>
+          <div class="project-desc">
+            <p>DMX controller on web application. My first work of embed and web mixed development.</p>
+            <p class="project-badges">
+              <a href="https://akuad.github.io/web-dmx/ui-demo/" target="_blank"><img src="https://img.shields.io/badge/Launch%20Demo-181717?logo=github" alt=""></a>
+              <a href="https://github.com/aKuad/web-dmx" target="_blank"><img src="https://img.shields.io/badge/aKuad-web--dmx-181717?logo=github" alt="Web DMX on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>&copy; 2026 aKuad</footer>
+  </body>
+</html>
