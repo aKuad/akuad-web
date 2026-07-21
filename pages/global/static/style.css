@@ -8,6 +8,7 @@
 :root {
   --text-color: hsl(0, 0%, 90%);
   --accent-color: hsl(240, 50%, 50%);
+  --border-color: hsl(0, 0%, 30%);
 }
 
 html {
@@ -90,7 +91,7 @@ h2 {
   font-size: 1.618rem;
   border-left: 15px solid var(--accent-color);
   padding: 0.3em calc(0.3em * 1.618);
-  margin: 1em 0;
+  margin: 3em 0 1em 0;
 }
 
 p {
@@ -108,7 +109,7 @@ a:hover {
 
 hr {
   width: 61.8%; /* 100/1.618 */
-  border-color: var(--text-color);
+  border-color: var(--border-color);
 }
 
 
