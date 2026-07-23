@@ -38,10 +38,16 @@ sequenceDiagram
   Note over b, k: Articles page access
   b ->>+ p: Access '/articles'
   p -->>- b: Response
-  b ->>+ p: Fetch articles data
-  p ->>+ k: Get
-  k -->>- p: Return
-  p -->>-b: Response
+  b ->> b: Check last fetched date-time
+  alt when recently data cached
+    b ->> b: Call cache<br>(Web Storage API)
+  else when never fetched or too old data cached
+    b ->>+ p: Fetch articles data
+    p ->>+ k: Get
+    k -->>- p: Return
+    p -->>- b: Response
+    b ->> b: Cache articles data
+  end
   b ->> b: View update
 
   Note over b, w: Articles data update every hour
