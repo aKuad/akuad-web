@@ -109,7 +109,8 @@ a:hover {
 
 hr {
   width: 61.8%; /* 100/1.618 */
-  border-color: var(--border-color);
+  border: none;
+  border-bottom: 1px solid var(--border-color);
 }
 
 
