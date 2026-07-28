@@ -15,4 +15,3 @@ crons = [ "0 * * * *" ]
 [[kv_namespaces]]
 binding = "ARTICLES_KV"
 id = "ccb43081d49740b2b3ac7a526125468a"
-preview_id = "ccb43081d49740b2b3ac7a526125468a"
