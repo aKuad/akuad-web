@@ -1,0 +1,274 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="aKuad">
+    <meta name="creator" content="aKuad">
+    <meta name="description" content="Projects by aKuad">
+    <meta name="keywords" content="akuad,website,projects,articles">
+    <meta property="og:title" content="Projects - aKuad">
+    <meta property="og:description" content="Projects by aKuad">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://akuad.dev/">
+    <meta property="og:image" content="https://akuad.dev/static/og-image.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="./static/style.css">
+    <style>
+      h3 {
+        margin: 2rem 0 1rem 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+      .project-container {
+        width: 100%;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .project-thumb {
+        flex: 1 1 0;
+      }
+      .project-thumb > img {
+        width: 100%;
+        border: 1px solid var(--border-color);
+      }
+      .project-badges {
+        text-align: right;
+      }
+      .project-desc {
+        flex: 1.618 1 0;
+        margin-left: 1.5rem;
+      }
+      .project-desc:first-child {
+        margin-left: 0;
+      }
+      @media screen and (width < 450px) {
+        .project-container {
+          flex-direction: column;
+        }
+        .project-desc {
+          margin-left: 0;
+        }
+      }
+    </style>
+    <title>Projects - aKuad</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="header-container">
+        <div id="header-icon"><a href="/"><img src="./static/icon-small.webp" style="width: 100%;"></a></div>
+        <nav id="header-nav">
+          <a href="/" class="header-nav-item">Top</a>
+          <div class="header-nav-item header-nav-item-active">Projects</div>
+          <!-- <a href="./articles.html" class="header-nav-item">Articles</a> -->
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>Projects</h1>
+
+      <h2>Active</h2>
+      <p>My current projects. Actively in development.</p>
+      <article>
+        <h3>aKuad Web</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/akuad-web.webp" alt="aKuad Web Thumbnail"></div>
+          <div class="project-desc">
+            <p>This website. Built with Vanilla HTML, CSS and JS. Powered by Cloudflare Workers & Pages.</p>
+            <p class="project-badges">
+              <a href="https://github.com/aKuad/akuad-web" target="_blank"><img src="https://img.shields.io/badge/aKuad-akuad--web-181717?logo=github" alt="aKuad Web on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <hr>
+      <article>
+        <h3>antenna</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/antenna-logo.svg" alt="antenna Thumbnail" style="border: none;"></div>
+          <div class="project-desc">
+            <p>Posts update collector library. Used at this site's articles page.</p>
+            <p class="project-badges">
+              <a href="https://jsr.io/@akuad/antenna" target="_blank"><img src="https://jsr.io/badges/@akuad/antenna" alt="JSR @akuad/antenna version badge"></a>
+              <a href="https://github.com/aKuad/antenna" target="_blank"><img src="https://img.shields.io/badge/aKuad-antenna-181717?logo=github" alt="antenna on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <hr>
+      <article>
+        <h3>Web DMX</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/web-dmx.webp" alt="Web DMX Thumbnail"></div>
+          <div class="project-desc">
+            <p>DMX controller on web application. My first work of embed and web mixed development.</p>
+            <p class="project-badges">
+              <a href="https://akuad.github.io/web-dmx/ui-demo/" target="_blank"><img src="https://img.shields.io/badge/Launch%20Demo-4040bf?logo=github" alt="Web DMX demo launch button"></a>
+              <a href="https://github.com/aKuad/web-dmx" target="_blank"><img src="https://img.shields.io/badge/aKuad-web--dmx-181717?logo=github" alt="Web DMX on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <h2>Maintenance</h2>
+      <p>Keeping things running. Updated on request or for bug fixes.</p>
+      <article>
+        <h3>Docs Gen Samples</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/docs-gen-samples.webp" alt="Docs Gen Samples Thumbnail"></div>
+          <div class="project-desc">
+            <p>Source document generator example collection. I'll add an example when I used a new generator. Or your PR welcome.</p>
+            <p class="project-badges">
+              <a href="https://docs-gen-samples.pages.dev/" target="_blank"><img src="https://img.shields.io/badge/View%20Doc-4040bf?logo=cloudflare" alt="Docs Gen Samples view doc button"></a>
+              <a href="https://github.com/aKuad/docs-gen-samples" target="_blank"><img src="https://img.shields.io/badge/aKuad-docs--gen--samples-181717?logo=github" alt="Docs Gen Samples on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <hr>
+      <article>
+        <h3>Iitomo 1of100</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/iitomo-1of100.webp" alt="Iitomo 1of100 Thumbnail" style="border: none;"></div>
+          <div class="project-desc">
+            <p>1 of 100 survey system clone from 笑っていいとも！ (Waratte Iitomo!, A Japanese TV program). It's perfect for a party game.</p>
+            <p class="project-badges">
+              <a href="https://iitomo-1of100.app/" target="_blank"><img src="https://img.shields.io/badge/Launch%20App-4040bf?logo=deno" alt="Iitomo 1of100 launch app button"></a>
+              <a href="https://github.com/aKuad/iitomo-1of100" target="_blank"><img src="https://img.shields.io/badge/aKuad-iitomo--1of100-181717?logo=github" alt="Iitomo 1of100 on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <hr>
+      <article>
+        <h3>Zenn Articles</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/zenn-articles.webp" alt="Zenn Articles Thumbnail"></div>
+          <div class="project-desc">
+            <p>My articles source of Zenn (ja). Mainly for my development idea note publishing.</p>
+            <p class="project-badges">
+              <a href="https://zenn.dev/akuad" target="_blank"><img src="https://img.shields.io/badge/View%20Articles-4040bf?logo=zenn" alt="Zenn Articles view doc button"></a>
+              <a href="https://github.com/aKuad/zenn-articles" target="_blank"><img src="https://img.shields.io/badge/aKuad-zenn--articles-181717?logo=github" alt="Zenn articles on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <hr>
+      <article>
+        <h3>Zenrobo Tutorial</h3>
+        <div class="project-container">
+          <div class="project-desc">
+            <p>全国ロボコン交流会 (Japan National Robot-contest tech meetup) is a meetup event operated by students. This doc is tips of it for new comers (ja).</p>
+            <p class="project-badges">
+              <a href="https://akuad.github.io/zenrobo-tutorial/" target="_blank"><img src="https://img.shields.io/badge/View%20Doc-4040bf?logo=github" alt="Zenrobo Tutorial view doc button"></a>
+              <a href="https://github.com/aKuad/zenrobo-tutorial" target="_blank"><img src="https://img.shields.io/badge/aKuad-zenrobo--tutorial-181717?logo=github" alt="Zenrobo Tutorial on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <h2>Archived</h2>
+      <p>My old works. No longer updated.</p>
+      <article>
+        <h3>Discord Auto Music</h3>
+        <div class="project-container">
+          <div class="project-desc">
+            <p>Automatically music playing bot on discord. It plays app server's local sound files with choosing randomly.</p>
+            <p class="project-badges">
+              <a href="https://github.com/aKuad/DiscordAutoMusic" target="_blank"><img src="https://img.shields.io/badge/aKuad-DiscordAutoMusic-181717?logo=github" alt="Discord Auto Music on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <hr>
+      <article>
+        <h3>DMX Mini Controller</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/dmx-mini-controller.webp" alt="DMX Mini Controller Thumbnail"></div>
+          <div class="project-desc">
+            <p>Handheld DMX controller DIY. My first circuit & embed development work.</p>
+            <p class="project-badges">
+              <a href="https://akuad.github.io/dmx-mini-controller/" target="_blank"><img src="https://img.shields.io/badge/View%20Doc-4040bf?logo=github" alt="DMX Mini Controller view doc button"></a>
+              <a href="https://github.com/aKuad/dmx-mini-controller" target="_blank"><img src="https://img.shields.io/badge/aKuad-dmx--mini--controller-181717?logo=github" alt="DMX Mini Controller on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <hr>
+      <article>
+        <h3>Intercom Net Notifier</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/intercom-net-notifier.webp" alt="Intercom Net Notifier Thumbnail"></div>
+          <div class="project-desc">
+            <p>Home intercom notifier via Internet messenger DIY with ESP32. The ESP32 Dev Module was kept unused in my gadget box.</p>
+            <p class="project-badges">
+              <a href="https://akuad.github.io/intercom-net-notifier/" target="_blank"><img src="https://img.shields.io/badge/View%20Doc-4040bf?logo=github" alt="Intercom Net Notifier view doc button"></a>
+              <a href="https://github.com/aKuad/intercom-net-notifier" target="_blank"><img src="https://img.shields.io/badge/aKuad-intercom--net--notifier-181717?logo=github" alt="Intercom Net Notifier on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <hr>
+      <article>
+        <h3>Mozjpeg Web-UI</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/mozjpeg-webui.webp" alt="Mozjpeg Web-UI Thumbnail"></div>
+          <div class="project-desc">
+            <p><a href="https://github.com/mozilla/mozjpeg" target="_blank">Mozjpeg</a> web frontend. No wasm, old style web app. My first work of web app with making a web API.</p>
+            <p class="project-badges">
+              <a href="https://akuad.github.io/mozjpeg-webui/" target="_blank"><img src="https://img.shields.io/badge/Launch%20Demo-4040bf?logo=github" alt="Mozjpeg Web-UI demo launch button"></a>
+              <a href="https://github.com/aKuad/mozjpeg-webui" target="_blank"><img src="https://img.shields.io/badge/aKuad-mozjpeg--webui-181717?logo=github" alt="Mozjpeg Web-UI on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <hr>
+      <article>
+        <h3>SeatLottery</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/seatlottery.webp" alt="SeatLottery Thumbnail"></div>
+          <div class="project-desc">
+            <p>Generate seat table from specified members and seat layout. Completely rework of SeatLottery_old.</p>
+            <p class="project-badges">
+              <a href="https://akuad.github.io/SeatLottery/" target="_blank"><img src="https://img.shields.io/badge/Launch%20App-4040bf?logo=github" alt="Mozjpeg Web-UI demo launch button"></a>
+              <a href="https://github.com/aKuad/SeatLottery" target="_blank"><img src="https://img.shields.io/badge/aKuad-SeatLottery-181717?logo=github" alt="SeatLottery on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <hr>
+      <article>
+        <h3>SeatLottery_old</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/seatlottery_old.webp" alt="SeatLottery_old Thumbnail"></div>
+          <div class="project-desc">
+            <p>Old work of SeatLottery. It began with my teacher's request at high school. One of the oldest my work of WebApp.</p>
+            <p class="project-badges">
+              <a href="https://github.com/aKuad/SeatLottery_old" target="_blank"><img src="https://img.shields.io/badge/aKuad-SeatLottery__old-181717?logo=github" alt="SeatLottery_old on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+      <hr>
+      <article>
+        <h3>Web Intercom</h3>
+        <div class="project-container">
+          <div class="project-thumb"><img src="./static/thumbs/web-intercom.webp" alt="Web Intercom Thumbnail" style="border: none;"></div>
+          <div class="project-desc">
+            <p>Inter-communication system works on browser. I worked it for tech-dept. in my high school.</p>
+            <p class="project-badges">
+              <a href="https://github.com/aKuad/web-intercom" target="_blank"><img src="https://img.shields.io/badge/aKuad-web--intercom-181717?logo=github" alt="Web Intercom on GitHub repository badge"></a>
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>&copy; 2026 aKuad</footer>
+  </body>
+</html>
