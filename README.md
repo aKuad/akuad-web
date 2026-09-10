@@ -4,16 +4,7 @@ aKuad's website - Powered by Cloudflare Workers & Pages and KV
 
 <https://akuad.dev>
 
-## How to preview website
-
-```sh
-cd pages
-npx wrangler pages dev global/ --persist-to ../.wrangler/
-```
-
-Then access to: `http://localhost8788/`
-
-## How to test workers cron script
+## How to test Workers cron script
 
 ```sh
 cd workers
@@ -26,6 +17,19 @@ To dispatch cron script, access to: `http://localhost:8787/cdn-cgi/handler/sched
 > [!NOTE]
 >
 > `--persist-to ../.wrangler/` for share local KV storage between Workers and Pages
+
+## How to preview website
+
+```sh
+cd pages
+npx wrangler pages dev global/ --persist-to ../.wrangler/
+```
+
+Then access to: `http://localhost8788/`
+
+> [!WARNING]
+>
+> To view articles page, Workers cron need to be run least once before view the page
 
 ## System overview
 
