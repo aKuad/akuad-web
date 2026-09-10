@@ -17,6 +17,7 @@ Then access to: `http://localhost8788/`
 
 ```sh
 cd workers
+npm ci
 npx wrangler dev
 ```
 
