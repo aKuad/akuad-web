@@ -8,7 +8,7 @@ aKuad's website - Powered by Cloudflare Workers & Pages and KV
 
 ```sh
 cd pages
-npx wrangler pages dev global/
+npx wrangler pages dev global/ --persist-to ../.wrangler/
 ```
 
 Then access to: `http://localhost8788/`
@@ -18,10 +18,14 @@ Then access to: `http://localhost8788/`
 ```sh
 cd workers
 npm ci
-npx wrangler dev
+npx wrangler dev --persist-to ../.wrangler/
 ```
 
-Then access to: `http://localhost:8787/cdn-cgi/handler/scheduled`
+To dispatch cron script, access to: `http://localhost:8787/cdn-cgi/handler/scheduled`
+
+> [!NOTE]
+>
+> `--persist-to ../.wrangler/` for share local KV storage between Workers and Pages
 
 ## System overview
 
