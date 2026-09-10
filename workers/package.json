@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@akuad/antenna": "npm:@jsr/akuad__antenna@^2.0.0"
+  }
+}
